@@ -2,12 +2,36 @@
    SYMBOLIC DENSITY ESTIMATION PAGE STYLES
    ========================================================================== */
 
+// Clean paper layout - no navigation, no sidebar
+body.paper-layout {
+  // Remove any default margins/padding
+  margin: 0;
+  padding: 0;
+  
+  // Hide masthead (top navigation)
+  .masthead {
+    display: none !important;
+  }
+  
+  // Hide sidebar
+  .sidebar {
+    display: none !important;
+  }
+  
+  // Hide any navigation elements
+  .navigation {
+    display: none !important;
+  }
+}
+
 .symbolic-density-page {
-  // Hide the sidebar and make content full width
+  // Clean hero section
   .page__hero--overlay {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
     padding: 4rem 0;
     text-align: center;
+    margin: 0;
+    width: 100%;
 
     .page__title {
       font-size: 2.5rem;
@@ -44,17 +68,20 @@
     max-width: none;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
-  .splash {
+  .paper-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    width: 100%;
   }
 
   .page__content {
     margin-top: 3rem;
     max-width: 100%;
+    width: 100%;
 
     h1 {
       color: #059669;

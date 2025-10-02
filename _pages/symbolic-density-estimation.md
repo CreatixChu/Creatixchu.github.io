@@ -2,7 +2,7 @@
 title: "Symbolic Density Estimation Through Symbolic Regression: A Decompositional Approach"
 subtitle: "AI-Kolmogorov Framework for Symbolic Density Estimation"
 permalink: /symbolic-density-estimation/
-layout: splash
+layout: paper
 classes: "symbolic-density-page"
 header:
   overlay_color: "#000"
