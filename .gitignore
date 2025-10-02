@@ -10,3 +10,66 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Ignore Jekyll build artifacts
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore vendor directory for local dependencies
+vendor/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore local development files
+Gemfile.local
+Gemfile.local.lock
+
+# Ignore bundler configuration
+.bundle/
+.bundle/config
+
+# Ignore Jekyll temporary files
+.jekyll/
+.jekyll-cache/
+
+# Ignore log files
+*.log
+
+# Ignore backup files
+*~
+*.bak
+*.swp
+*.swo
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore coverage reports
+coverage/
+.nyc_output/
+
+# Ignore test artifacts
+.rspec
+.cucumber

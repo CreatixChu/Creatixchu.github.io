@@ -74,92 +74,25 @@
       margin-bottom: 1.2rem;
     }
     
-    .abstract-section {
-      background: #f8fafc;
-      border-left: 4px solid #059669;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 0 8px 8px 0;
+    ul {
+      margin: 0;
+      padding-left: 1.5rem;
       
-      h2 {
-        margin-top: 0;
-        color: #059669;
+      li {
+        margin-bottom: 0.8rem;
+        font-size: 1.1rem;
+        line-height: 1.5;
       }
     }
     
-    .method-section {
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 8px;
+    a {
+      color: #7c3aed;
+      text-decoration: none;
+      font-weight: 600;
       
-      h2, h3 {
-        color: #059669;
-      }
-    }
-    
-    .results-section {
-      background: #fef3c7;
-      border: 1px solid #fde68a;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 8px;
-      
-      h2, h3 {
-        color: #059669;
-      }
-    }
-    
-    .key-findings {
-      background: #e0f2fe;
-      border: 1px solid #7dd3fc;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 8px;
-      
-      h3 {
-        color: #059669;
-        margin-top: 0;
-      }
-      
-      ul {
-        margin: 0;
-        padding-left: 1.5rem;
-        
-        li {
-          margin-bottom: 0.8rem;
-          font-size: 1.1rem;
-          line-height: 1.5;
-        }
-      }
-    }
-    
-    .more-info-section {
-      background: #f3e8ff;
-      border: 1px solid #c4b5fd;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 8px;
-      
-      h2 {
-        color: #059669;
-        margin-top: 0;
-      }
-      
-      p {
-        margin-bottom: 1rem;
-      }
-      
-      a {
-        color: #7c3aed;
-        text-decoration: none;
-        font-weight: 600;
-        
-        &:hover {
-          color: #5b21b6;
-          text-decoration: underline;
-        }
+      &:hover {
+        color: #5b21b6;
+        text-decoration: underline;
       }
     }
   }
