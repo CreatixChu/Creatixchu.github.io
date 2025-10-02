@@ -1,0 +1,183 @@
+/* ==========================================================================
+   SYMBOLIC DENSITY ESTIMATION PAGE STYLES
+   ========================================================================== */
+
+.symbolic-density-page {
+  .page__hero--overlay {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+    padding: 4rem 0;
+    text-align: center;
+    
+    .page__title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      
+      @include breakpoint($small) {
+        font-size: 3rem;
+      }
+      
+      @include breakpoint($medium) {
+        font-size: 3.5rem;
+      }
+    }
+    
+    .page__subtitle {
+      font-size: 1.2rem;
+      color: #e5e7eb;
+      font-weight: 400;
+      margin-bottom: 0;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      
+      @include breakpoint($small) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  
+  .page__content {
+    margin-top: 3rem;
+    
+    h1 {
+      color: #059669;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    
+    h2 {
+      color: #059669;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #059669;
+      padding-bottom: 0.5rem;
+    }
+    
+    h3 {
+      color: #059669;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #374151;
+      margin-bottom: 1.2rem;
+    }
+    
+    .abstract-section {
+      background: #f8fafc;
+      border-left: 4px solid #059669;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 8px 8px 0;
+      
+      h2 {
+        margin-top: 0;
+        color: #059669;
+      }
+    }
+    
+    .method-section {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+      
+      h2, h3 {
+        color: #059669;
+      }
+    }
+    
+    .results-section {
+      background: #fef3c7;
+      border: 1px solid #fde68a;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+      
+      h2, h3 {
+        color: #059669;
+      }
+    }
+    
+    .key-findings {
+      background: #e0f2fe;
+      border: 1px solid #7dd3fc;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+      
+      h3 {
+        color: #059669;
+        margin-top: 0;
+      }
+      
+      ul {
+        margin: 0;
+        padding-left: 1.5rem;
+        
+        li {
+          margin-bottom: 0.8rem;
+          font-size: 1.1rem;
+          line-height: 1.5;
+        }
+      }
+    }
+    
+    .more-info-section {
+      background: #f3e8ff;
+      border: 1px solid #c4b5fd;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+      
+      h2 {
+        color: #059669;
+        margin-top: 0;
+      }
+      
+      p {
+        margin-bottom: 1rem;
+      }
+      
+      a {
+        color: #7c3aed;
+        text-decoration: none;
+        font-weight: 600;
+        
+        &:hover {
+          color: #5b21b6;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive adjustments */
+@include breakpoint($small) {
+  .symbolic-density-page {
+    .page__hero--overlay {
+      padding: 5rem 0;
+    }
+  }
+}
+
+@include breakpoint($medium) {
+  .symbolic-density-page {
+    .page__hero--overlay {
+      padding: 6rem 0;
+    }
+  }
+}
