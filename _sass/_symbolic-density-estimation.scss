@@ -3,11 +3,12 @@
    ========================================================================== */
 
 .symbolic-density-page {
+  // Hide the sidebar and make content full width
   .page__hero--overlay {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
     padding: 4rem 0;
     text-align: center;
-    
+
     .page__title {
       font-size: 2.5rem;
       font-weight: 700;
@@ -15,32 +16,46 @@
       margin-bottom: 1rem;
       line-height: 1.2;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      
+
       @include breakpoint($small) {
         font-size: 3rem;
       }
-      
+
       @include breakpoint($medium) {
         font-size: 3.5rem;
       }
     }
-    
+
     .page__subtitle {
       font-size: 1.2rem;
       color: #e5e7eb;
       font-weight: 400;
       margin-bottom: 0;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-      
+
       @include breakpoint($small) {
         font-size: 1.4rem;
       }
     }
   }
-  
+
+  // Full width content area
+  #main {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .splash {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
   .page__content {
     margin-top: 3rem;
-    
+    max-width: 100%;
+
     h1 {
       color: #059669;
       font-size: 2.2rem;
@@ -48,7 +63,7 @@
       margin-bottom: 1.5rem;
       text-align: center;
     }
-    
+
     h2 {
       color: #059669;
       font-size: 1.8rem;
@@ -58,7 +73,7 @@
       border-bottom: 2px solid #059669;
       padding-bottom: 0.5rem;
     }
-    
+
     h3 {
       color: #059669;
       font-size: 1.4rem;
@@ -66,30 +81,30 @@
       margin-top: 2rem;
       margin-bottom: 0.8rem;
     }
-    
+
     p {
       font-size: 1.1rem;
       line-height: 1.6;
       color: #374151;
       margin-bottom: 1.2rem;
     }
-    
+
     ul {
       margin: 0;
       padding-left: 1.5rem;
-      
+
       li {
         margin-bottom: 0.8rem;
         font-size: 1.1rem;
         line-height: 1.5;
       }
     }
-    
+
     a {
       color: #7c3aed;
       text-decoration: none;
       font-weight: 600;
-      
+
       &:hover {
         color: #5b21b6;
         text-decoration: underline;

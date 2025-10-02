@@ -3,7 +3,8 @@
 # Jekyll Local Development Server Script
 # This script sets up the environment and runs Jekyll locally
 
-set -e  # Exit on any error
+# Don't exit on error for cleanup commands
+set -e
 
 echo "🚀 Starting Jekyll Local Development Server..."
 echo "=============================================="
@@ -31,6 +32,11 @@ if ! command -v bundle &> /dev/null; then
     exit 1
 fi
 
+# Clean up any existing processes on the ports we'll use
+echo "🧹 Cleaning up existing processes..."
+lsof -ti:4000 | xargs kill -9 2>/dev/null || true
+lsof -ti:35729 | xargs kill -9 2>/dev/null || true
+
 # Install dependencies if needed
 if [ ! -d "vendor/bundle" ]; then
     echo "📦 Installing dependencies..."
@@ -43,6 +49,10 @@ if ! bundle exec --gemfile Gemfile.local jekyll --version &> /dev/null; then
     bundle install --gemfile Gemfile.local
 fi
 
+# Clean up any conflicting files
+echo "🧹 Cleaning up conflicting files..."
+rm -f _posts/2199-01-01-future-post.md 2>/dev/null || true
+
 echo "✅ Environment ready!"
 echo ""
 echo "🌐 Starting Jekyll server..."
@@ -53,5 +63,7 @@ echo ""
 echo "Press Ctrl+C to stop the server"
 echo "=============================================="
 
-# Run Jekyll server
-bundle exec --gemfile Gemfile.local jekyll serve --livereload --host 0.0.0.0 --port 4000
+# Run Jekyll server with reduced warnings
+# Suppress SASS deprecation warnings by setting environment variable
+export SASS_SILENCE_DEPRECATIONS="*"
+bundle exec --gemfile Gemfile.local jekyll serve --livereload --host 0.0.0.0 --port 4000 --quiet

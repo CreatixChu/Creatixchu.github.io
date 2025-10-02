@@ -1,9 +1,9 @@
 ---
 title: "Symbolic Density Estimation Through Symbolic Regression: A Decompositional Approach"
-subtitle: "Website showcasing our projects that are at the intersection of logic and machine learning"
+subtitle: "AI-Kolmogorov Framework for Symbolic Density Estimation"
 permalink: /symbolic-density-estimation/
-layout: single
-classes: "wide symbolic-density-page"
+layout: splash
+classes: "symbolic-density-page"
 header:
   overlay_color: "#000"
   overlay_opacity: 0.5
@@ -63,7 +63,3 @@ Our evaluation includes synthetic datasets sampled from multivariate normal dist
 ## More Information
 
 For detailed experimental results, mathematical formulations, and implementation details, please refer to the complete paper. The AI-Kolmogorov framework represents a significant advancement in bridging symbolic regression with density estimation, offering new possibilities for interpretable scientific discovery.
-
-**Paper Status**: Under review as a conference paper at ICLR 2026
-
-**Code Repository**: [https://anonymous.4open.science/r/SRPDF](https://anonymous.4open.science/r/SRPDF)
