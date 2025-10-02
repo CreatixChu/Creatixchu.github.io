@@ -13,6 +13,20 @@ header:
 
 # Symbolic Density Estimation Through Symbolic Regression: A Decompositional Approach
 
+## Authors
+
+**Angelo Arvind Rajendram**¹, **Xieting Chu**², **Aishik Ghosh**³, **Max Fieg**⁴, **Vijay Ganesh**⁵
+
+¹ University of Waterloo  
+² Georgia Institute of Technology  
+³ Georgia Institute of Technology  
+⁴ University of California, Irvine  
+⁵ Georgia Institute of Technology  
+
+## TL;DR
+
+**TL;DR:** We propose the AI-Kolmogorov Framework, a decompositional approach that leverages symbolic regression for symbolic density estimation. This method aims to discover interpretable density functions from data, bridging symbolic regression with density estimation for scientific discovery. Our four-stage pipeline decomposes high-dimensional problems through clustering and structure learning, then applies symbolic regression to marginal and conditional distributions. We demonstrate the framework's effectiveness on synthetic mixture models and multivariate distributions, showing it can rediscover underlying distributions while producing interpretable analytic models.
+
 ## Overview
 
 We introduce AI-Kolmogorov, a novel framework for Symbolic Density Estimation (SDES). Although traditional symbolic regression (SR) tools have been effectively used in many settings, they cannot be directly used for density estimation, since the target probability density values are not available from the samples. Traditional SR tools are further limited as they often scale exponentially in the number of input variables and operators, and do not exploit structure inherent in continuous probability density functions.
